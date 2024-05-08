@@ -1,0 +1,166 @@
+body
+{
+    font-family: monospace;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    color: #37352F;
+}
+div
+{
+    color: #37352F;
+    font-family: monospace;
+}
+h1
+{
+    font-weight: 800;
+    font-size: 30;
+    font-family: monospace;
+    color: #4e085f;
+}
+.strikethrough
+{
+    text-decoration: line-through;
+}
+.container
+{
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F3F8;
+  
+}
+.textbar
+{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+.new
+{
+    padding:13px;
+    height: 55px;
+    color: #37352F;
+    width: 500px;
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 25px;
+    border-radius: 10px;
+
+}
+.add
+{
+    font-size: 24px;
+    color: #37352F;
+    font-family: monospace;
+    font-weight: 900;
+    height: 55px ;
+    width: 80px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 300px;
+}
+.dltall
+{
+    font-size: 24px;
+    color: #37352F;
+    font-family: monospace;
+    font-weight: 900;
+    height: 55px ;
+    width: 80px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.add:hover,.dltall:hover
+{
+    background-color: #4e085f;
+    color: white;
+
+}
+.dltall
+{
+    width: 90px;
+    padding: 5px;
+    font-size: 15px;
+}
+.task
+{
+    width: 670px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding:7px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.close
+{
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    background:none;
+    font-size: 20px;
+    color: red;
+}
+.right,.left
+{
+    
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.edit
+{
+    border-radius: 5px;
+    text-decoration: none;
+    background: none;
+    color: blue;
+    border: none;
+}
+i
+{
+    color: black;
+    font-size: 20px;
+}
+.close:hover,.edit:hover
+{
+    background-color: rgb(201, 201, 201);
+    color:#2d027e
+    
+}
+.container
+{
+    box-shadow: 0px 5px 15px rgb(0, 0, 0);
+    margin-left: 400px;
+    width:700px;
+    border: 2px solid rgba(0, 0, 0, 0.219);
+    padding:10px;
+    border-radius: 20px;
+}
+input[type="checkbox"] 
+{
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 0.25rem solid rgba(86, 88, 86, 0.837);
+    border-radius: 20px;
+}
+input[type="checkbox"]::before 
+{
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    clip-path: circle(50%);
+    transform: scale(0);
+    background-color: #153677;
+  }
+input[type="checkbox"]:checked::before 
+{
+    transform:   rotate(50deg);
+}
+   
